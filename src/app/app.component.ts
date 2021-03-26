@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  currentPage = 0;
   images = [
     {
       title: 'At the Beach',
@@ -28,4 +29,10 @@ export class AppComponent {
         'https://images.unsplash.com/photo-1517299321609-52687d1bc55a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60'
     }
   ];
+  getClass(i:string){
+    if (i==this.currentPage.toString()) {
+      return 'active';
+    }
+    return '';
+  }
 }
