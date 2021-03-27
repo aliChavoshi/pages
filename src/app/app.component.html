@@ -13,6 +13,17 @@
         </li>
     </ul>
 </nav>
+<!-- <div [ngSwitch]="currentPage">
+    <div *ngSwitchCase="0">
+        this page in zero
+    </div>
+    <div *ngSwitchCase="0">
+        this page in one
+    </div>
+    <div *ngSwitchDefault>
+        this page in default
+    </div>
+</div> -->
 <div>
     <h2>{{ images[currentPage].title }}</h2>
     <img [src]="images[currentPage].url" alt="">
