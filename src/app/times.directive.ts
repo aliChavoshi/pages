@@ -13,7 +13,10 @@ export class TimesDirective {
     @Input('appTimes') set render(time : number){
       this.viewContainerRef.clear();
       for (let i = 0; i < time; i++) {
-          this.viewContainerRef.createEmbeddedView(this.templateRef,{});
+          this.viewContainerRef.createEmbeddedView(this.templateRef,{
+            index : i,
+            color : 'red'
+          });
       }
     }
 }
