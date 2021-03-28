@@ -11,7 +11,7 @@ export class ClassDirective {
   // }
   @Input('appClass') set classNames(classObj : any){
     for (let key in classObj) {
-      console.log(classObj);
+      //console.log(classObj);
 
       if (classObj[key]) {
           this.element.nativeElement.classList.add(key);
