@@ -89,13 +89,4 @@ export class AppComponent {
         'https://images.unsplash.com/photo-1616684245456-9b2b6eb0df4b?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
     }
   ];
-  getClass(i:number){
-    if (i == this.currentPage) {
-      return 'active';
-    }
-    return '';
-  }
-  checkWindowIndex(index : number){
-    return Math.abs(this.currentPage-index) < 5;
-  }
 }
